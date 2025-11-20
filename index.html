@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Propuesta Fipes x ClonAI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Fredoka:wght@400;600&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              fipes: {
+                red: '#EE2A2E',
+                yellow: '#FFD600',
+                dark: '#1A1A1A',
+                pink: '#F4A4A4',
+                blue: '#87CEEB'
+              }
+            },
+            fontFamily: {
+              display: ['Bangers', 'cursive'],
+              body: ['Fredoka', 'sans-serif'],
+              sans: ['Inter', 'sans-serif'],
+            },
+            boxShadow: {
+              'retro': '4px 4px 0px 0px #000000',
+              'retro-hover': '2px 2px 0px 0px #000000',
+              'card': '8px 8px 0px 0px #000000',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #EE2A2E;
+        background-image: radial-gradient(#F4A4A4 2px, transparent 2px);
+        background-size: 30px 30px;
+      }
+      .scrollbar-hide::-webkit-scrollbar {
+          display: none;
+      }
+      .scrollbar-hide {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "recharts": "https://aistudiocdn.com/recharts@^3.4.1",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
